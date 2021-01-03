@@ -1,62 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
+    <link rel="stylesheet" href="main.js">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <title>Ilario Maggi - Portfolio</title>
   </head>
   <body>
-  <div class="container">
-  <div class='page'>
+
 
 <!-- MENU -->
-  <div class="section__header">
-  <div class="section__menu"></div>
-  <div class="menu2">
-    <p class="punto" id="Home">.</p>
-  <div class='menu'>
-    <img src="logo-home.JPG" class="logo">
-   <ul class="menu__di__navigazione">
-    <li class="header__menu__item"><a href="#Home">Home</a></li>
-    <li class="header__menu__item"><a href="#Biografia">Biografia</a></li>
-    <li class="header__menu__item"><a href="#Progetti">Progetti</a></li>
-    <li class="header__menu__item"><a href="#Contatti">Contatti</a></li>
-   </ul>
-  </div>
-</div>
-</div>
-</div>
+<header class="section__header clearfix">
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#Biografia">Biografia<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#Progetti">Progetti<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#Contattami">Contattami<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+</nav>
+</header>
+
 
 <!-- COVER / HOME -->
-  <div class="section__home">
-    <div class="filtro__cover"></div>
-    <div class="cover__caption">
-      <div class="cover__caption__copy">
-        <h1>Benvenuto sul mio sito</h1>
-      <h2>
-     <a href="https://www.facebook.com/Ilario-Maggi-100498938163435" target="_blank" class="fa fa-facebook"></a>
-     <a href="https://www.instagram.com/ilariomaggi/" target="_blank" class="fa fa-instagram"></a>
-     <a href="https://it.linkedin.com/in/ilario-maggi-a68a301bb" target="_blank" class="fa fa-linkedin"></a>
-     <a href="https://www.youtube.com/channel/UCQOFmm57225vsFI2sQ-PC-w/videos" target="_blank" class="fa fa-youtube"></a>
-     <a href="https://open.spotify.com/album/0UD4sHepgYYl8KdMgoqNVK?si=xMNSH_IuSmiCXmmBqyZ7EA" target="_blank" class="fa fa-spotify"></a>
-     <a href="https://www.amazon.com/Backdrops-Ilario-Maggi/dp/B08BTB29ZR" target="_blank" class="fa fa-amazon"></a>
-     <a href="https://music.apple.com/jp/artist/ilario-maggi/1520380475" target="_blank" class="fa fa-apple"></a>
-     <a href="https://ilariomaggi-musicianandcomp-blog.tumblr.com" target="_blank" class="fa fa-tumblr"></a>
-   </h2>
+  <div class="section__home" id="Home">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="foto-sito-home.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="immagine-copertina-dopobio.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="immagine-copertina-dopopro.jpg" class="d-block w-100" alt="...">
+      </div>
     </div>
-    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
   </div>
+</div>
 
-
+<br><br><br>
+<hr />
 <!-- BIOGRAFIA -->
-  <div class="page">
-  <div class="section__biografia">
-    <p class="punto" id="Biografia">.</p>
-  <h1>Biografia</h1>
-  <p class="paragrafo1">
-    <img src="immagine-biografia.jpg" class="immagine__dentro__biografia" width="600" height="600" align="right">
+
+  <div class="section__biografia" id="Biografia">
+   <h1>Biografia</h1>
+     <p>
        Nasco il 18/04/1997 ad Avezzano (Aq), inizio a muovere i primi
        passi nel mondo della musica fin da piccolo con docenti qualificati, </br>
        dapprima con il M° Massimiliano De Foglio,
@@ -107,64 +122,95 @@
     </br>
 </div>
 </div>
-<!-- COPERTINA FOTO DOPO BIOGRAFIA -->
-  <div class="section__copertina__dopo__biografia"></div>
+<hr />
+
 
 <!-- PROGETTI -->
-  <div class="page">
-  <div class="section__progetti">
-    <h1 id="Progetti">Progetti</h1>
-     <div class="colonna1">
-       <a href="https://wall.cdclick-europe.com/projects/BACKDROPS" target="_blank" title="link per acquistare il disco">
-       <img src="ILARIOFRONTE.png" height="700" width="700"></a>
-     </div>
-     <div class="colonna2">
-       <a href="https://www.terremarsicane.it/in-uscita-backdrops-il-primo-ep-di-ilario-maggi/" target="_blank" title="articolo di giornale">
-       <img src="ILARIORETRO.png" height="700" width="700"></a>
-     </div>
-     <div class="colonna3">
-       <a href="https://www.infomedianews.com/intervista-a-ilario-maggi/" target="_blank" title="intervista">
-       <img src="rendering backdrops.jpg" height="700" width="1000"></a>
-     </div>
+<div class="section__progetti">
+<h1 id="Progetti">Progetti</h1>
+<div class="row">
+  <div class="col-12 col-lg-4">
+<!--grid item 1-->
+    <div class="it-grid-item-wrapper">
+      <div class="hover">
+      <a href="https://www.infomedianews.com/intervista-a-ilario-maggi/" target="_blank">
+        <div class="img-responsive-wrapper">
+          <div class="img-responsive">
+            <div class="img-wrapper"><img src="immagine-biografia.jpg" width="80%" title="intervista"></div>
+          </div>
+        </div>
+      </a>
+    </div>
   </div>
 </div>
-<!-- COPERTINA FOTO DOPO PROGETTI -->
-  <div class="section__copertina__dopo__progetti"></div>
+<!--grid item 2-->
+  <div class="col-12 col-lg-4">
+    <div class="hover">
+    <div class="it-grid-item-wrapper">
+      <a href="https://wall.cdclick-europe.com/projects/BACKDROPS" target="_blank">
+        <div class="img-responsive-wrapper">
+          <div class="img-responsive">
+            <div class="img-wrapper"><img src="ILARIOFRONTE.png" width="80%" title="Acquista il mio disco"></div>
+          </div>
+        </div>
+        <span class="it-griditem-text-wrapper">
+          <svg class="icon">
+            <use xlink:href="/bootstrap-italia/dist/svg/sprite.svg#it-code-circle"></use>
+          </svg>
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
+<!--grid item 3-->
+
+  <div class="col-12 col-lg-4">
+    <div class="hover">
+    <div class="it-grid-item-wrapper it-grid-item-overlay">
+      <a href="https://www.terremarsicane.it/in-uscita-backdrops-il-primo-ep-di-ilario-maggi/" target="_blank">
+        <div class="img-responsive-wrapper">
+          <div class="img-responsive">
+            <div class="img-wrapper"><img src="ILARIORETRO.png" width="80%" title="Articolo di giornale"></div>
+          </div>
+        </div>
+        <span class="it-griditem-text-wrapper">
+          <svg class="icon">
+            <use xlink:href="/bootstrap-italia/dist/svg/sprite.svg#it-code-circle"></use>
+          </svg>
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<hr />
 
 <!-- CONTATTI -->
-  <div class="page">
-  <div class="section__contatti">
-    <h1 id="Contatti">Contatti</h1>
-     <div class="box__contatti"><h2>Per info, consigli e lezioni: </h2>
-      </br>
-      </br>
-      <a href="mailto:info.ilariomaggi@gmail.com?subject=Info,%20consigli%20e%20lezioni"
-      class="box__contatti__pulsante">invia una mail</a>
-     </div>
-     <div class="box__contatti"><h2>Per inviti ad eventi, concerti e sessioni di registrazione:</h2>
-      </br>
-      </br>
-      <a href="mailto:management.ilariomaggi@gmail.com?subject=Inviti%20ad%20eventi,%20concerti%20e%20sessioni%20di%20registrazione"
-      class="box__contatti__pulsante">invia una mail</a>
-    </div>
-    <div class="box__contatti"><h2>Per aiutare me e i miei progetti:</h2>
-      </br>
-      </br>
-      <a href="https://www.paypal.me/IlarioMaggi" target="_blank"
-      class="box__contatti__pulsante">Donazione</a>
-    </div>
-  </div>
-</div>
+
+<div class="section__contatti">
+<h1 id="Contattami">Contattami</h1>
+<p> Per qualsiasi informazione, ti invito a contattarmi via mail al pulsante qui sotto<br><br><a href="mailto:ilariomaggi@gmail.com" class="mail"> invia mail<a></p>
 </div>
 
 
 <!-- FOOTER -->
    <div class="section__footer">
-     </br>
-     </br>
+     <h2 class="icone__footer">
+    <a href="https://www.facebook.com/Ilario-Maggi-100498938163435" target="_blank" class="fa fa-facebook"></a>
+    <a href="https://www.instagram.com/ilariomaggi/" target="_blank" class="fa fa-instagram"></a>
+    <a href="https://it.linkedin.com/in/ilario-maggi-a68a301bb" target="_blank" class="fa fa-linkedin"></a>
+    <a href="https://www.youtube.com/channel/UCQOFmm57225vsFI2sQ-PC-w/videos" target="_blank" class="fa fa-youtube"></a>
+    <a href="https://open.spotify.com/album/0UD4sHepgYYl8KdMgoqNVK?si=xMNSH_IuSmiCXmmBqyZ7EA" target="_blank" class="fa fa-spotify"></a>
+    <a href="https://www.amazon.com/Backdrops-Ilario-Maggi/dp/B08BTB29ZR" target="_blank" class="fa fa-amazon"></a>
+    <a href="https://music.apple.com/jp/artist/ilario-maggi/1520380475" target="_blank" class="fa fa-apple"></a>
+    <a href="https://ilariomaggi-musicianandcomp-blog.tumblr.com" target="_blank" class="fa fa-tumblr"></a>
+  </h2>
       <h4>Creato da: Ilario Maggi 2020 si rilascia per gli usi consentiti</h4>
-   </div>
+    </div>
 
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
  </body>
 </html>
